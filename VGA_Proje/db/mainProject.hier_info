@@ -1,0 +1,101 @@
+|mainProject
+clock => clock.IN2
+button1 => button1.IN2
+button2 => button2.IN2
+button3 => button3.IN2
+H_Sync << Disp_VGA:VGA.h_sync
+Output_B << Disp_VGA:VGA.Blue
+Output_G << Disp_VGA:VGA.Green
+Output_R << Disp_VGA:VGA.Red
+V_Sync << Disp_VGA:VGA.v_sync
+digit << sevenSegment:sevenSegment.digit
+segment[0] << sevenSegment:sevenSegment.sevenS_out
+segment[1] << sevenSegment:sevenSegment.sevenS_out
+segment[2] << sevenSegment:sevenSegment.sevenS_out
+segment[3] << sevenSegment:sevenSegment.sevenS_out
+segment[4] << sevenSegment:sevenSegment.sevenS_out
+segment[5] << sevenSegment:sevenSegment.sevenS_out
+segment[6] << sevenSegment:sevenSegment.sevenS_out
+
+
+|mainProject|Disp_VGA:VGA
+clk_50M => clock25M.CLK
+button1 => always2.IN0
+button1 => always2.IN0
+button1 => Green.OUTPUTSELECT
+button1 => Blue.OUTPUTSELECT
+button1 => Add4.IN18
+button1 => Add6.IN18
+button1 => Add2.IN10
+button1 => Add2.IN9
+button1 => Add3.IN13
+button1 => Add5.IN13
+button1 => Add7.IN8
+button1 => Add7.IN7
+button2 => always2.IN1
+button2 => always2.IN1
+button2 => always2.IN0
+button2 => always2.IN1
+button2 => Green.OUTPUTSELECT
+button2 => Blue.OUTPUTSELECT
+button2 => Add4.IN19
+button2 => Add6.IN19
+button2 => Add2.IN14
+button2 => Add2.IN8
+button2 => Add3.IN12
+button2 => Add5.IN12
+button2 => Add7.IN13
+button2 => Add7.IN6
+button3 => always2.IN1
+button3 => always2.IN1
+button3 => Add4.IN20
+button3 => Add6.IN20
+button3 => Add2.IN7
+button3 => Add2.IN13
+button3 => Add3.IN17
+button3 => Add5.IN11
+button3 => Green.DATAA
+button3 => Blue.DATAA
+button3 => Add7.IN12
+button3 => Add7.IN11
+h_sync <= h_sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+v_sync <= v_sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Red <= Red~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Green <= Green~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Blue <= Blue~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mainProject|sevenSegment:sevenSegment
+clk => sevenS_out[0]~reg0.CLK
+clk => sevenS_out[1]~reg0.CLK
+clk => sevenS_out[2]~reg0.CLK
+clk => sevenS_out[3]~reg0.CLK
+clk => sevenS_out[4]~reg0.CLK
+clk => sevenS_out[5]~reg0.CLK
+clk => sevenS_out[6]~reg0.CLK
+button1 => always0.IN0
+button1 => always0.IN0
+button1 => always0.IN0
+button1 => always0.IN0
+button2 => always0.IN1
+button2 => always0.IN1
+button2 => always0.IN1
+button2 => always0.IN1
+button3 => always0.IN1
+button3 => always0.IN1
+button3 => always0.IN1
+button3 => always0.IN1
+button3 => always0.IN1
+button3 => always0.IN1
+button3 => always0.IN1
+button3 => always0.IN1
+digit <= <GND>
+sevenS_out[0] <= sevenS_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sevenS_out[1] <= sevenS_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sevenS_out[2] <= sevenS_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sevenS_out[3] <= sevenS_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sevenS_out[4] <= sevenS_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sevenS_out[5] <= sevenS_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sevenS_out[6] <= sevenS_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

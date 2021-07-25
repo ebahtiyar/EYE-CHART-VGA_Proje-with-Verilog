@@ -1,0 +1,32 @@
+module sevenSegment(
+
+button;
+sevenS_out;
+)
+
+input [2:0]button;
+output [6:0]sevenS_out;
+
+wire [6:0]zero = 7'b1000000;
+wire [6:0]one = 7'b1111001;
+wire [6:0]two = 7'b0100100;
+wire [6:0]three = 7'b0110000;
+wire [6:0]four = 7'b0011001;
+wire [6:0]five = 7'b0010010;
+wire [6:0]six = 7'b0000010;
+
+
+if(~button[0] && ~button[1] && ~button[2])
+sevenS_out = six;
+else if(button && button[1]&& button[2])
+sevenS_out = one;
+else if(~button[0] && button[1] && button[2])
+sevenS_out = two;
+else if(~button[0] && ~button[1] && button[2])
+sevenS_out = three;
+else if(button[0] && button[1] && ~button[2])
+sevenS_out = four;
+else if(button[0] && ~button[1] && ~button[2])
+sevenS_out = five;
+else
+sevenS_out = zero;

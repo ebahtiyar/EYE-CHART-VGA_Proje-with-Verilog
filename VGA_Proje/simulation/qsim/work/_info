@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1\VGA_Proje\simulation\qsim
+vDisp_VGA
+Z1 !s100 ZG@aTjonoOH;[3S@>YAQh1
+Z2 I_Z?2`^@bjC0mf6fjKXnoE2
+Z3 V[m@0>3h?PZKA@P_1iadfE3
+Z4 dC:\altera\13.1\VGA_Proje\simulation\qsim
+Z5 w1612978474
+Z6 8Disp_VGA.vo
+Z7 FDisp_VGA.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Disp_VGA.vo|
+Z10 o-work work -O0
+Z11 n@disp_@v@g@a
+!i10b 1
+!s85 0
+Z12 !s108 1612978476.744000
+Z13 !s107 Disp_VGA.vo|
+!s101 -O0
+vDisp_VGA_vlg_check_tst
+!i10b 1
+!s100 fe:JmfhU1T]04gb^;OQIj1
+IHYz0ZjAbc52@lCMCjnAa[3
+Z14 VzUHh<GB2@JblTYd[]FJIW1
+R4
+Z15 w1612978471
+Z16 8Waveform3.vwf.vt
+Z17 FWaveform3.vwf.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z18 !s108 1612978477.015000
+Z19 !s107 Waveform3.vwf.vt|
+Z20 !s90 -work|work|Waveform3.vwf.vt|
+!s101 -O0
+R10
+Z21 n@disp_@v@g@a_vlg_check_tst
+vDisp_VGA_vlg_sample_tst
+!i10b 1
+!s100 F_5aX7c]K;:TIGEMJo<7S1
+Ia?TmUJZm:Hj0QTMPCN<XV0
+Z22 V@zcRY]CGbKFZmMl`=>Io43
+R4
+R15
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z23 n@disp_@v@g@a_vlg_sample_tst
+vDisp_VGA_vlg_vec_tst
+!i10b 1
+!s100 cHB3<TUZaS]AKn@f=VNG_1
+IPom@>lbG:L6d?2A43LSLg0
+Z24 VJMXhn2Il@2WO7i2gOlh<A2
+R4
+R15
+R16
+R17
+Z25 L0 202
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z26 n@disp_@v@g@a_vlg_vec_tst

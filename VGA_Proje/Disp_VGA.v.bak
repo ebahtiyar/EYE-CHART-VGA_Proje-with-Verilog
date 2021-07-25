@@ -1,0 +1,27 @@
+module Disp_VGA(
+    input clk_50M,
+	 input button1,
+	 input button2,
+	 input button3,
+	 input button4,
+    output reg  h_sync_signal,
+    output reg  v_sync_signal,
+    output reg  Red,
+    output reg  Green,
+    output reg  Blue,
+);
+
+parameter Display_H = 640;
+parameter FrontP_H =  16;
+parameter SyncP_H  = 96;
+parameter BackP_H  = 48;
+parameter Whole_H  = 800;
+
+parameter Display_V = 480;
+parameter FrontP_V = 10;
+parameter SyncP_V  = 2;
+parameter BackP_V  = 33;
+parameter Whole_V  = 525;
+
+
+
